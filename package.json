@@ -12,8 +12,16 @@
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "jquery": "^3.2.1",
-    "mongoose": "^4.9.5",
+    "mongoose": "^4.9.6",
     "react": "^15.5.4"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharkmanch/msgr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sharkmanch/msgr/issues"
+  },
+  "homepage": "https://github.com/sharkmanch/msgr#readme"
 }
