@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
-app.use(bodyParser.urlencoded({extended:false}))
+app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 //get Msgrm
 const messenger_room = require('./models/messenger_room')
@@ -58,17 +58,15 @@ app.get('/api/messenger_rooms/:_id', (req, res)=>{
 
 //app/post room
 app.post('/api/messenger_rooms', (req,res)=>{
-    const body = req.body;
-    console.log(req)
+    const body = req.body
+    const {room_number} = body
     const new_messenger_room={
-        room_number:10
+        room_number:room_number
     }
     messenger_room.add_messenger_room(new_messenger_room, (err, new_messenger_room)=>{
         if(err){
-            console.log(err)
             throw err;
         }
-
         res.json(new_messenger_room);
     });
 });
