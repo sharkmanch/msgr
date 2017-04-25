@@ -30,8 +30,8 @@ module.exports.get_messenger_room_by_ID = (id, callback) =>{
 }
 
 //post or add room .
-module.exports.add_messenger_room =  (messenger_room, callback) =>{
-    messenger_room.create(messenger_room, callback);
+module.exports.add_messenger_room =  (body, callback) =>{
+    messenger_room.create(body, callback);
 }
 
 //i dont think updating room is necessary, probably updating the roomname or room no. for fun
