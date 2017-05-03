@@ -1,0 +1,170 @@
+<html ng-app="myApp">
+<head>
+    <title>Messenger</title>
+    <!-- FE-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <!--FE we gonna need bootstrap, angular-route, jquery, so we gonna need bower < which is a client side package manager just like npm for the server side> -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!--FE-->
+<!-- testing codepen stuff-->
+<!-- ------------------------------------------------------------------ -->
+<div class="all">
+    <div class="header">
+        BRIGHT GARDEN
+    </div>
+    <!--end of header-------------------------------------->
+    <div class="menuList">
+        <div class="dropdown">
+            <div class="dropBtn homeBtn">HOME </div>
+            <!--dropBtn end-->
+            <div class="dropdown-content">
+                <a href="">HELLO </a>
+                <a href="">HELLO </a>
+                <a href="">HELLO </a>
+                <a href="">HELLO </a>
+
+            </div>
+            <!--dropdown-content end-->
+        </div>
+        <!--dropdownended-->
+        <div class="dropdown">
+            <div class="dropBtn aboutBtn">ABOUT US </div>
+            <!--dropBtn end-->
+            <div class="dropdown-content">
+                <a href="">HELLO </a>
+                <a href="">HELLO </a>
+                <a href="">HELLO </a>
+                <a href="">HELLO </a>
+
+            </div>
+            <!--dropdown-content end-->
+        </div>
+        <!--dropdownended-->
+        <div class="dropdown">
+            <div class="dropBtn servBtn">SERVICES </div>
+            <!--dropBtn end-->
+            <div class="dropdown-content">
+                <a href="">HELLO </a>
+                <a href="">HELLO </a>
+                <a href="">HELLO </a>
+                <a href="">HELLO </a>
+
+            </div>
+            <!--dropdown-content end-->
+        </div>
+        <!--dropdownended-->
+        <div class="dropdown">
+            <div class="dropBtn portBtn">PORTFOLIO </div>
+            <!--dropBtn end-->
+            <div class="dropdown-content">
+                <a href="">HELLO </a>
+                <a href="">HELLO </a>
+                <a href="">HELLO </a>
+                <a href="">HELLO </a>
+
+            </div>
+            <!--dropdown-content end-->
+        </div>
+        <!--dropdownended-->
+        <div class="dropdown">
+            <div class="dropBtn contactBtn">CONTACT US </div>
+            <!--dropBtn end-->
+            <div class="dropdown-content">
+                <a href="">HELLO </a>
+                <a href="">HELLO </a>
+                <a href="">HELLO </a>
+                <a href="">HELLO </a>
+
+            </div>
+            <!--dropdown-content end-->
+        </div>
+        <!--dropdownended-->
+
+
+    </div>
+    <!-- menu list end -->
+    <div class="container">
+
+        <div class="imgBlock">
+            <img class='ui image' src="http://homedesignvip.com/img/homedesignvip/3d%20garden%20design.jpg" alt="Smiley face" width="300" height="300">
+
+
+        </div>
+        <div class="imgBlock ">
+            <img class='ui image' src="https://scontent.fhkg4-1.fna.fbcdn.net/v/t1.0-9/1796657_485650718205893_475466842_n.jpg?oh=708667f67e8f47208d429a184b5fca73&oe=5953E34A" alt="Smiley face" width="300" height="300">
+        </div>
+        <!--imgBlock end-->
+        <div class="imgBlock ">
+            <img class='ui image' src="https://scontent.fhkg4-1.fna.fbcdn.net/v/t1.0-9/1972522_485650738205891_1784629027_n.jpg?oh=c28570e489cfd9e1fbec6e25d3e9df85&oe=5953558D" alt="Smiley face" width="300" height="300">
+        </div>
+        <!--imgBlock end-->
+        <div class="imgBlock ">
+            <img class='ui image' src="https://scontent.fhkg4-1.fna.fbcdn.net/v/t1.0-9/1653978_485650788205886_1488596644_n.jpg?oh=66ca17e57dea156802e32e1ca19316a0&oe=59590E3F" alt="Smiley face" width="300" height="300">
+        </div>
+        <!--imgBlock end-->
+        <div class="imgBlock ">
+            <img class='ui image' src="https://scontent.fhkg4-1.fna.fbcdn.net/v/t1.0-9/1920597_485650768205888_1679602483_n.jpg?oh=023e146aa6459f0dd93742da429e6c0a&oe=59549268" alt="Smiley face" width="300" height="300">
+        </div>
+        <!--imgBlock end-->
+        <div class="imgBlock ">
+            <img class='ui image' src=" " alt="Smiley face" width="300" height="300">
+        </div>
+        <!--imgBlock end-->
+    </div>
+    <!--container end---------------------------------------->
+    <div></div>
+    <div class="footer" style="padding: 20px; background-color: #EEEEEE">BRIGHTGARDEN.COM.HK@2017. ALL RIGHTS RESERVED. |CONTACT|WEB DESIGN| BY DANTEON99</div>
+    <div class="footer" style="font-size:8px;">EMAIL: BRIGHTGARDEN@NETVIGATOR.COM|TEL: 24715555|FAX: 24822222</div>
+</div>
+<!-- all end -->
+
+<!--end test codepen stuff -->
+
+
+
+
+<button> hello</button>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Messenger</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#/messenger_rooms/add">Add Room</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <!--everything that goes thru angular is gonna be in ng-view -->
+            <div ng-view></div>
+        </div>
+    </div>
+
+</div><!-- /.container -->
+
+<!-- FE get bower install --save bootstrap angular angular-route jquery >> to install them and add links to here...-->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/angular-route/angular-route.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="/app.js"></script>
+<script src="/controllers/messenger_room.js"></script>
+
+
+
+</body>
+</html>
